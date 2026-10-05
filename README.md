@@ -1,7 +1,7 @@
 > [!WARNING]
 > ### ⚠️ ARCHIVADO / CONSOLIDADO EN DRAKES-SUITES
 > Este repositorio ha sido consolidado de forma definitiva en el monorepo oficial:  
-> 👉 [**Drakes-Suites (Suite 1: DrakesTech)**](https://github.com/DrakesCraft-Labs/Drakes-Suites)  
+> 👉 [**Drakes-Suites (Suite 1: DrakesTech)**](https://github.com/SlimefunNewHorizons/Drakes-Suites)  
 > Todo el desarrollo activo, optimizaciones del Ticker Engine, compatibilidad con Paper 1.21.11 y preparación para 26.X se realiza exclusivamente allí.
 
 # Infinity Expansion - Slimefun 6
@@ -56,7 +56,7 @@ Este addon es compatible con el **Reactor Unificado** de DrakesCraft-Labs.
 ## 🤝 Créditos y Autoría
 - **Autor Original**: [Mooy1](https://github.com/Mooy1)
 - **Mantenedor**: [Sefiraat](https://github.com/Sefiraat)
-- **Fork Drake / 1.21.1:** [DrakesCraft-Labs](https://github.com/DrakesCraft-Labs)
+- **Fork Drake / 1.21.1:** [DrakesCraft-Labs](https://github.com/SlimefunNewHorizons)
 
 ---
 *Powered by DrakesCraft-Labs - 2026*
@@ -72,7 +72,7 @@ Este addon es compatible con el **Reactor Unificado** de DrakesCraft-Labs.
 
 ## 📄 License & Upstream Attribution
 
-This project is a sovereign fork maintained by [**JackStar6677-1**](https://github.com/JackStar6677-1) under [**DrakesCraft Labs**](https://github.com/DrakesCraft-Labs).
+This project is a sovereign fork maintained by [**JackStar6677-1**](https://github.com/JackStar6677-1) under [**DrakesCraft Labs**](https://github.com/SlimefunNewHorizons).
 
 - **Original Project:** Created by the upstream authors and the open-source community.
 - **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21, high concurrency, asynchronous safety, and exploit/duplication prevention.
