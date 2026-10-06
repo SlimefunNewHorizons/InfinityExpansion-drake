@@ -1,28 +1,19 @@
-package com.github.drakescraft_labs.infinityexpansion;
+package com.github.drakescraft_labs.infinityexpansion.items.generators;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import org.mockbukkit.mockbukkit.MockBukkit;
-import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class TestInfinityExpansion {
-
-    @BeforeAll
-    public static void load() {
-        MockBukkit.mock();
-        MockBukkit.load(Slimefun.class);
-    }
-
-    @AfterAll
-    public static void unload() {
-        MockBukkit.unmock();
-    }
+class InfinityReactorTest {
 
     @Test
-    void testLoad() {
-        MockBukkit.load(InfinityExpansion.class);
+    void radiationPulseKeepsTheConfiguredTenTickCadence() {
+        assertTrue(RadiationPulseSchedule.isPulseTick(0));
+        assertTrue(RadiationPulseSchedule.isPulseTick(10));
+        assertTrue(RadiationPulseSchedule.isPulseTick(-10));
+        assertFalse(RadiationPulseSchedule.isPulseTick(1));
+        assertFalse(RadiationPulseSchedule.isPulseTick(9));
     }
 
 }
