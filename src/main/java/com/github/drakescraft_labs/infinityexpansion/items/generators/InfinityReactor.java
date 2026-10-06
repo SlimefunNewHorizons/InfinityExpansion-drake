@@ -196,8 +196,31 @@ public final class InfinityReactor extends MenuBlock implements EnergyNetProvide
 
         //generate
 
-        // Emit active cosmic radiation pulse to nearby unprotected players
-        if (l.getWorld() != null && Math.floorMod(progress, 10) == 0) {
+        // EnergyNet may invoke this ticker asynchronously. Do not even inspect Bukkit
+        // entities off-thread: profile resolution can itself complete asynchronously and
+        // Paper requires all world/player access to originate on the server thread.
+        if (RadiationPulseSchedule.isPulseTick(progress)) {
+            Scheduler.run(() -> emitRadiationPulse(l));
+        }
+
+        if (inv.hasViewer()) {
+            inv.replaceExistingItem(STATUS_SLOT, new CustomItemStack(Material.LIME_STAINED_GLASS_PANE,
+                            "&aGenerating...",
+                            "&aTime until infinity ingot needed: " + (INFINITY_INTERVAL - progress),
+                            "&aTime until void ingot needed: " + (VOID_INTERVAL - Math.floorMod(progress, VOID_INTERVAL))
+                    )
+            );
+        }
+        BlockStorage.addBlockInfo(l, "progress", String.valueOf(progress + 1));
+        return this.gen;
+    }
+
+    /**
+     * Applies a radiation pulse from the primary server thread. The profile callback is
+     * explicitly marshalled back to that thread before it mutates an entity.
+     */
+    private void emitRadiationPulse(@Nonnull Location l) {
+        if (l.getWorld() != null) {
             for (Player p : l.getWorld().getPlayers()) {
                 if (p.getGameMode() == GameMode.CREATIVE || p.getGameMode() == GameMode.SPECTATOR) continue;
                 if (p.getLocation().distanceSquared(l) <= 64.0) { // 8 blocks
@@ -217,17 +240,6 @@ public final class InfinityReactor extends MenuBlock implements EnergyNetProvide
                 }
             }
         }
-
-        if (inv.hasViewer()) {
-            inv.replaceExistingItem(STATUS_SLOT, new CustomItemStack(Material.LIME_STAINED_GLASS_PANE,
-                            "&aGenerating...",
-                            "&aTime until infinity ingot needed: " + (INFINITY_INTERVAL - progress),
-                            "&aTime until void ingot needed: " + (VOID_INTERVAL - Math.floorMod(progress, VOID_INTERVAL))
-                    )
-            );
-        }
-        BlockStorage.addBlockInfo(l, "progress", String.valueOf(progress + 1));
-        return this.gen;
     }
 
     @Override
