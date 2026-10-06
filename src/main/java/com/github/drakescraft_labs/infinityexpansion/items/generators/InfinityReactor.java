@@ -20,6 +20,7 @@ import com.github.drakescraft_labs.slimefun4.core.attributes.ProtectionType;
 import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile;
 import com.github.drakescraft_labs.infinityexpansion.utils.Util;
 import com.github.drakescraft_labs.infinityexpansion.items.materials.Materials;
+import dev.drake.infinitylib.common.Scheduler;
 import dev.drake.infinitylib.common.StackUtils;
 import dev.drake.infinitylib.machines.MenuBlock;
 import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
@@ -202,10 +203,15 @@ public final class InfinityReactor extends MenuBlock implements EnergyNetProvide
                 if (p.getLocation().distanceSquared(l) <= 64.0) { // 8 blocks
                     PlayerProfile.get(p, profile -> {
                         if (profile != null && !profile.hasFullProtectionAgainst(ProtectionType.RADIATION)) {
-                            p.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 80, 1));
-                            p.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 80, 1));
-                            p.addPotionEffect(new PotionEffect(PotionEffectType.NAUSEA, 100, 0));
-                            p.damage(2.0); // 1 heart environmental radiation damage
+                            // TickerTask and PlayerProfile callbacks can be asynchronous. Entity mutations
+                            // must return to the server thread before touching Bukkit's player state.
+                            Scheduler.run(() -> {
+                                if (!p.isOnline()) return;
+                                p.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 80, 1));
+                                p.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 80, 1));
+                                p.addPotionEffect(new PotionEffect(PotionEffectType.NAUSEA, 100, 0));
+                                p.damage(2.0); // 1 heart environmental radiation damage
+                            });
                         }
                     });
                 }
