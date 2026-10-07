@@ -9,12 +9,12 @@ import org.bukkit.potion.PotionEffect;
 import com.github.drakescraft_labs.infinityexpansion.InfinityExpansion;
 import com.github.drakescraft_labs.infinityexpansion.categories.Groups;
 import com.github.drakescraft_labs.infinityexpansion.items.blocks.InfinityWorkbench;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.core.attributes.NotPlaceable;
-import com.github.drakescraft_labs.slimefun4.core.attributes.ProtectionType;
-import com.github.drakescraft_labs.slimefun4.core.attributes.ProtectiveArmor;
-import com.github.drakescraft_labs.slimefun4.core.attributes.Soulbound;
-import com.github.drakescraft_labs.slimefun4.implementation.items.armor.SlimefunArmorPiece;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
+import io.github.thebusybiscuit.slimefun4.core.attributes.ProtectionType;
+import io.github.thebusybiscuit.slimefun4.core.attributes.ProtectiveArmor;
+import io.github.thebusybiscuit.slimefun4.core.attributes.Soulbound;
+import io.github.thebusybiscuit.slimefun4.implementation.items.armor.SlimefunArmorPiece;
 
 /**
  * armor

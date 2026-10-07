@@ -6,10 +6,10 @@ import org.bukkit.inventory.ItemStack;
 
 import dev.drake.infinitylib.machines.CraftingBlock;
 import dev.drake.infinitylib.machines.MachineRecipeType;
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenu;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 
 /**
  * A crafting machine for upgrading storage units and retaining the stored items

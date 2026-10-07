@@ -11,8 +11,8 @@ import com.github.drakescraft_labs.infinityexpansion.items.materials.Materials;
 import com.github.drakescraft_labs.infinityexpansion.items.mobdata.MobData;
 import com.github.drakescraft_labs.infinityexpansion.items.quarries.Quarries;
 import com.github.drakescraft_labs.infinityexpansion.items.storage.Storage;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.researches.Research;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.researches.Research;
 
 @UtilityClass
 public final class Researches {

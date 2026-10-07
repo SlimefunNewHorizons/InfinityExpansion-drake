@@ -14,12 +14,12 @@ import org.bukkit.inventory.ItemStack;
 
 import com.github.drakescraft_labs.infinityexpansion.categories.Groups;
 import dev.drake.infinitylib.machines.MachineLore;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.core.attributes.NotPlaceable;
-import com.github.drakescraft_labs.slimefun4.core.attributes.RecipeDisplayItem;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.collections.RandomizedSet;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
+import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.RandomizedSet;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 
 /**
  * A mob data card which will be able to be used in the {@link MobSimulationChamber}

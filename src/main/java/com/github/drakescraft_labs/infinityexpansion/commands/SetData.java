@@ -13,8 +13,8 @@ import org.bukkit.entity.Player;
 
 import com.github.drakescraft_labs.infinityexpansion.items.storage.StorageUnit;
 import dev.drake.infinitylib.commands.SubCommand;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 public final class SetData extends SubCommand {
 

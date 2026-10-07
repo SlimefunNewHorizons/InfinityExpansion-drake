@@ -12,14 +12,14 @@ import com.github.drakescraft_labs.infinityexpansion.InfinityExpansion;
 import com.github.drakescraft_labs.infinityexpansion.categories.Groups;
 import com.github.drakescraft_labs.infinityexpansion.items.blocks.InfinityWorkbench;
 import com.github.drakescraft_labs.infinityexpansion.items.machines.VoidHarvester;
-import com.github.drakescraft_labs.slimefun4.implementation.items.blocks.HardenedGlass;
-import com.github.drakescraft_labs.slimefun4.implementation.items.blocks.WitherProofBlock;
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
-import com.github.drakescraft_labs.slimefun4.utils.LoreBuilder;
+import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.HardenedGlass;
+import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.WitherProofBlock;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
 
 @UtilityClass
 public final class Materials {

@@ -15,16 +15,16 @@ import dev.drake.infinitylib.common.StackUtils;
 import dev.drake.infinitylib.machines.AbstractMachineBlock;
 import dev.drake.infinitylib.machines.MachineLore;
 import dev.drake.infinitylib.machines.TickingMenuBlock;
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.core.attributes.EnergyNetComponent;
-import com.github.drakescraft_labs.slimefun4.core.networks.energy.EnergyNetComponentType;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
-import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenu;
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenuPreset;
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.DirtyChestMenu;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.core.attributes.EnergyNetComponent;
+import io.github.thebusybiscuit.slimefun4.core.networks.energy.EnergyNetComponentType;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
+import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
 
 public final class MobSimulationChamber extends TickingMenuBlock implements EnergyNetComponent {
 

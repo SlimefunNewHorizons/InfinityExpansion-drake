@@ -21,19 +21,19 @@ import com.github.drakescraft_labs.infinityexpansion.items.blocks.InfinityWorkbe
 import com.github.drakescraft_labs.infinityexpansion.items.materials.Materials;
 import dev.drake.infinitylib.common.Scheduler;
 import dev.drake.infinitylib.machines.MachineLore;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
-import com.github.drakescraft_labs.slimefun4.implementation.items.electric.Capacitor;
-import com.github.drakescraft_labs.slimefun4.implementation.items.electric.machines.ChargingBench;
-import com.github.drakescraft_labs.slimefun4.implementation.items.electric.machines.ElectricSmeltery;
-import com.github.drakescraft_labs.slimefun4.implementation.items.electric.machines.enchanting.AutoDisenchanter;
-import com.github.drakescraft_labs.slimefun4.implementation.items.electric.machines.enchanting.AutoEnchanter;
-import com.github.drakescraft_labs.slimefun4.implementation.items.electric.reactors.NetherStarReactor;
-import com.github.drakescraft_labs.slimefun4.implementation.items.geo.GEOMiner;
-import com.github.drakescraft_labs.slimefun4.utils.HeadTexture;
-import com.github.drakescraft_labs.slimefun4.legacy.Objects.SlimefunItem.abstractItems.MachineFuel;
-import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.implementation.items.electric.Capacitor;
+import io.github.thebusybiscuit.slimefun4.implementation.items.electric.machines.ChargingBench;
+import io.github.thebusybiscuit.slimefun4.implementation.items.electric.machines.ElectricSmeltery;
+import io.github.thebusybiscuit.slimefun4.implementation.items.electric.machines.enchanting.AutoDisenchanter;
+import io.github.thebusybiscuit.slimefun4.implementation.items.electric.machines.enchanting.AutoEnchanter;
+import io.github.thebusybiscuit.slimefun4.implementation.items.electric.reactors.NetherStarReactor;
+import io.github.thebusybiscuit.slimefun4.implementation.items.geo.GEOMiner;
+import io.github.thebusybiscuit.slimefun4.utils.HeadTexture;
+import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineFuel;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 @UtilityClass
 public final class SlimefunExtension {

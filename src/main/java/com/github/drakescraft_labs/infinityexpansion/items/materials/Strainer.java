@@ -9,10 +9,10 @@ import org.bukkit.persistence.PersistentDataType;
 
 import com.github.drakescraft_labs.infinityexpansion.InfinityExpansion;
 import com.github.drakescraft_labs.infinityexpansion.categories.Groups;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.core.attributes.NotPlaceable;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
 
 /**
  * Items to be used in the Strainer Base

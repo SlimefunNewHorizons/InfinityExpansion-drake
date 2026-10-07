@@ -11,10 +11,10 @@ import com.github.drakescraft_labs.infinityexpansion.items.SlimefunExtension;
 import com.github.drakescraft_labs.infinityexpansion.items.blocks.InfinityWorkbench;
 import com.github.drakescraft_labs.infinityexpansion.items.materials.Materials;
 import dev.drake.infinitylib.machines.MachineLore;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 
 @UtilityClass
 public final class Generators {

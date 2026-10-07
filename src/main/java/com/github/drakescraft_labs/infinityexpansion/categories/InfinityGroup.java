@@ -27,20 +27,20 @@ import com.github.drakescraft_labs.infinityexpansion.items.blocks.InfinityWorkbe
 import dev.drake.infinitylib.common.Scheduler;
 import dev.drake.infinitylib.common.StackUtils;
 import dev.drake.infinitylib.machines.MenuBlock;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.items.groups.FlexItemGroup;
-import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile;
-import com.github.drakescraft_labs.slimefun4.api.researches.Research;
-import com.github.drakescraft_labs.slimefun4.core.guide.SlimefunGuideImplementation;
-import com.github.drakescraft_labs.slimefun4.core.guide.SlimefunGuideMode;
-import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.collections.Pair;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.ItemUtils;
-import com.github.drakescraft_labs.slimefun4.utils.ChestMenuUtils;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.items.groups.FlexItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
+import io.github.thebusybiscuit.slimefun4.api.researches.Research;
+import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuideImplementation;
+import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuideMode;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.Pair;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
+import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenu;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 
 /**
  * A custom category for displaying 6x6 recipes and their sub-recipes

@@ -16,24 +16,24 @@ import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
-import com.github.drakescraft_labs.slimefun4.core.attributes.ProtectionType;
-import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile;
+import io.github.thebusybiscuit.slimefun4.core.attributes.ProtectionType;
+import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
 import com.github.drakescraft_labs.infinityexpansion.utils.Util;
 import com.github.drakescraft_labs.infinityexpansion.items.materials.Materials;
 import dev.drake.infinitylib.common.Scheduler;
 import dev.drake.infinitylib.common.StackUtils;
 import dev.drake.infinitylib.machines.MenuBlock;
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.core.attributes.EnergyNetProvider;
-import com.github.drakescraft_labs.slimefun4.core.attributes.RecipeDisplayItem;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.core.attributes.EnergyNetProvider;
+import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
-import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenu;
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenuPreset;
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.DirtyChestMenu;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
+import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
 
 /**
  * A reactor that generates huge power but costs infinity ingots and void ingots

@@ -11,9 +11,9 @@ import org.bukkit.inventory.ItemStack;
 import com.github.drakescraft_labs.infinityexpansion.InfinityExpansion;
 import com.github.drakescraft_labs.infinityexpansion.categories.Groups;
 import com.github.drakescraft_labs.infinityexpansion.items.machines.SingularityConstructor;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.implementation.items.blocks.UnplaceableBlock;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.UnplaceableBlock;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 
 /**
  * Singularities and there recipe displays

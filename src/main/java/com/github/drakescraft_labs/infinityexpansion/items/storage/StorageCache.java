@@ -21,13 +21,13 @@ import org.bukkit.persistence.PersistentDataType;
 
 import com.github.drakescraft_labs.infinityexpansion.InfinityExpansion;
 import dev.drake.infinitylib.machines.MachineLore;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.common.ChatColors;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.ItemUtils;
-import com.github.drakescraft_labs.slimefun4.utils.tags.SlimefunTag;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.common.ChatColors;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
+import io.github.thebusybiscuit.slimefun4.utils.tags.SlimefunTag;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
-import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenu;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 
 import static com.github.drakescraft_labs.infinityexpansion.items.storage.StorageUnit.DISPLAY_KEY;
 import static com.github.drakescraft_labs.infinityexpansion.items.storage.StorageUnit.DISPLAY_SLOT;

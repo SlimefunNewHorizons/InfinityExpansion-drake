@@ -22,7 +22,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import com.github.drakescraft_labs.infinityexpansion.InfinityExpansion;
-import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 
 @UtilityClass
 public final class Util {

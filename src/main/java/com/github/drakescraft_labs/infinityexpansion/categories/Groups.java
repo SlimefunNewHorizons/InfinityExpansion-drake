@@ -5,8 +5,8 @@ import org.bukkit.Material;
 import com.github.drakescraft_labs.infinityexpansion.InfinityExpansion;
 import dev.drake.infinitylib.groups.MultiGroup;
 import dev.drake.infinitylib.groups.SubGroup;
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 
 /**
  * Categories for this addon

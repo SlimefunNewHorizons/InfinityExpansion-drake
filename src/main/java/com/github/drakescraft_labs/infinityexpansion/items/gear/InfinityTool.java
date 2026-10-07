@@ -4,10 +4,10 @@ import org.bukkit.inventory.ItemStack;
 
 import com.github.drakescraft_labs.infinityexpansion.categories.Groups;
 import com.github.drakescraft_labs.infinityexpansion.items.blocks.InfinityWorkbench;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.core.attributes.NotPlaceable;
-import com.github.drakescraft_labs.slimefun4.core.attributes.Soulbound;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
+import io.github.thebusybiscuit.slimefun4.core.attributes.Soulbound;
 
 /**
  * tools
