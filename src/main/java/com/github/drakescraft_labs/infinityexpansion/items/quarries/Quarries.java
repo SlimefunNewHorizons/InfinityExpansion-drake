@@ -62,6 +62,55 @@ public final class Quarries {
             MachineLore.speed(64),
             MachineLore.energyPerSecond(36000)
     );
+
+    public static final SlimefunItemStack LASER_EXCAVATOR = new SlimefunItemStack(
+            "LASER_EXCAVATOR",
+            "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWMzNDE1MTdmNGQxODY1YmViY2UzM2Y0YTFhZmI1MmYxM2FhYjhkMjZlZDY0ZTdlMjI5YThiNThiMWY1YjNkIn19fQ==",
+            "&c&lLaser Excavator",
+            "&7High-tech subterranean beam excavator",
+            "&7Mines deep resources without terrain destruction",
+            "&7Supports modular &dFocus Lenses&7 for specialized yields",
+            "",
+            MachineLore.speed(4),
+            MachineLore.energyPerSecond(2400)
+    );
+
+    public static final SlimefunItemStack NETHER_FOCUS_LENS = new SlimefunItemStack(
+            "LASER_LENS_NETHER",
+            "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTlhOTJlNGNjOWE4NWI0YjBhODNhM2U3ZTE0YTE5ZGQzODE0ZGFlNjIzZTAwY2Y5YTM3ZThkYjRkZGM5Yjc1NyJ9fX0=",
+            "&cLaser Focus Lens: &4Nether",
+            "&7Modular upgrade for the Laser Excavator",
+            "&7Calibrates thermal beam frequency to extract",
+            "&cAncient Debris&7, &cNetherite Scrap&7, and &cQuartz"
+    );
+
+    public static final SlimefunItemStack PRECIOUS_FOCUS_LENS = new SlimefunItemStack(
+            "LASER_LENS_PRECIOUS",
+            "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDlmNjEzZDIwYjQ2ZjBjYjg5ZWMzNzRmYWY0ZjQ3MzBmYTVkYzEwOTBhMGY1MmRmZmJjM2MwY2Q1OTQ2Mjg5NCJ9fX0=",
+            "&aLaser Focus Lens: &bPrecious Gems",
+            "&7Modular upgrade for the Laser Excavator",
+            "&7Refracts subterranean pulses to focus on",
+            "&bDiamonds&7, &aEmeralds&7, and &6Gold"
+    );
+
+    public static final SlimefunItemStack ENERGY_CONVERTER_LENS = new SlimefunItemStack(
+            "LASER_LENS_OVERCLOCK",
+            "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2E3Y2RhOTAwNGZjMTk3ZDY2YWZiYzJiMDAzYTViOWVmMTNjZjQ2MDBiMWZjNzQ5MDA2NzU5MGYwNDcxODFlIn19fQ==",
+            "&eLaser Overclock Lens: &6High Frequency",
+            "&7Modular upgrade for the Laser Excavator",
+            "&7Overclocks laser pulse frequency to",
+            "&eDouble excavation speed and yield",
+            "&cConsumes 2x energy per cycle"
+    );
+
+    public static final SlimefunItemStack VOID_FOCUS_LENS = new SlimefunItemStack(
+            "LASER_LENS_VOID",
+            "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIwMWFlMWE4YTA0ZGY1MjY1NmY1ZTQ4MTNlMWZiY2Y5Nzg3N2RiYmZiYzQyNjhkMDQzMTZkNmY5Zjc1MyJ9fX0=",
+            "&5Laser Focus Lens: &dVoid & Cosmic",
+            "&7Modular upgrade for the Laser Excavator",
+            "&7Tunnels through spacetime to extract",
+            "&5Void Bits&7, &5Void Dust&7, and &dEnder Pearls"
+    );
     public static final double DIAMOND_CHANCE = getOscillatorChance("diamond");
     public static final double REDSTONE_CHANCE = getOscillatorChance("redstone");
     public static final double LAPIS_CHANCE = getOscillatorChance("lapis");
@@ -171,6 +220,51 @@ public final class Quarries {
                 Materials.VOID_INGOT, null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null, Materials.VOID_INGOT,
                 Materials.VOID_INGOT, null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null, Materials.VOID_INGOT
         }, 64, 1, outputs.toArray(new Material[0])).energyPerTick(36000).register(plugin);
+
+        // Register Modular Focus Lenses for Laser Excavator
+        new LaserLens(NETHER_FOCUS_LENS, LaserLens.LensType.NETHER, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
+                Materials.MAGSTEEL_PLATE, new ItemStack(Material.RED_STAINED_GLASS), Materials.MAGSTEEL_PLATE,
+                new ItemStack(Material.NETHERITE_INGOT), new ItemStack(Material.ANCIENT_DEBRIS), new ItemStack(Material.NETHERITE_INGOT),
+                Materials.MACHINE_CIRCUIT, new ItemStack(Material.RED_STAINED_GLASS), Materials.MACHINE_CIRCUIT
+        }).register(plugin);
+
+        new LaserLens(PRECIOUS_FOCUS_LENS, LaserLens.LensType.PRECIOUS, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
+                Materials.MACHINE_PLATE, new ItemStack(Material.LIME_STAINED_GLASS), Materials.MACHINE_PLATE,
+                new ItemStack(Material.DIAMOND_BLOCK), new ItemStack(Material.EMERALD_BLOCK), new ItemStack(Material.DIAMOND_BLOCK),
+                Materials.MACHINE_CIRCUIT, new ItemStack(Material.LIME_STAINED_GLASS), Materials.MACHINE_CIRCUIT
+        }).register(plugin);
+
+        new LaserLens(ENERGY_CONVERTER_LENS, LaserLens.LensType.OVERCLOCK, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
+                Materials.MACHINE_PLATE, new ItemStack(Material.YELLOW_STAINED_GLASS), Materials.MACHINE_PLATE,
+                SlimefunItems.ENERGIZED_CAPACITOR, Materials.MACHINE_CORE, SlimefunItems.ENERGIZED_CAPACITOR,
+                Materials.MACHINE_CIRCUIT, new ItemStack(Material.YELLOW_STAINED_GLASS), Materials.MACHINE_CIRCUIT
+        }).register(plugin);
+
+        new LaserLens(VOID_FOCUS_LENS, LaserLens.LensType.VOID, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
+                Materials.VOID_INGOT, new ItemStack(Material.PURPLE_STAINED_GLASS), Materials.VOID_INGOT,
+                SlimefunExtension.VOID_CAPACITOR, Materials.VOID_BIT, SlimefunExtension.VOID_CAPACITOR,
+                Materials.INFINITE_CIRCUIT, new ItemStack(Material.PURPLE_STAINED_GLASS), Materials.INFINITE_CIRCUIT
+        }).register(plugin);
+
+        // Register Laser Excavator
+        int laserSpeed = plugin.getConfig().getInt("quarry-options.laser-excavator.base-speed", 4);
+        int laserEnergy = plugin.getConfig().getInt("quarry-options.laser-excavator.energy-per-tick", 1200);
+        int laserCapacity = plugin.getConfig().getInt("quarry-options.laser-excavator.energy-capacity", 10000);
+
+        LaserExcavator laserExcavator = new LaserExcavator(
+                Groups.ADVANCED_MACHINES,
+                LASER_EXCAVATOR,
+                RecipeType.ENHANCED_CRAFTING_TABLE,
+                new ItemStack[] {
+                        Materials.MACHINE_PLATE, SlimefunItems.ENERGIZED_CAPACITOR, Materials.MACHINE_PLATE,
+                        Materials.VOID_INGOT, VOID_QUARRY, Materials.VOID_INGOT,
+                        Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT
+                },
+                laserSpeed
+        );
+        laserExcavator.energyPerTick(laserEnergy);
+        laserExcavator.energyCapacity(laserCapacity);
+        laserExcavator.register(plugin);
     }
 
 }
