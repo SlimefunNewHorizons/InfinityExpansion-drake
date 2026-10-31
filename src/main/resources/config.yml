@@ -38,6 +38,15 @@ quarry-options:
   # Allow quarries to mine quartz, netherite, netherrack in any world
   output-nether-materials-in-overworld: false
 
+  # Laser Excavator modular quarry options
+  laser-excavator:
+    ticks-per-output: 4
+    base-speed: 4
+    energy-per-tick: 1200
+    energy-capacity: 10000
+    # Particle feedback is safe to disable immediately if a visual issue is reported.
+    visual-effects: true
+
   # Enable/Disable resources from being produced
   resources:
 
