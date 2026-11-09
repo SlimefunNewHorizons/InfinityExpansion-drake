@@ -1,72 +1,82 @@
-> [!WARNING]
-> ### ⚠️ ARCHIVADO / CONSOLIDADO EN DRAKES-SUITES
-> Este repositorio ha sido consolidado de forma definitiva en el monorepo oficial:  
-> 👉 [**Drakes-Suites (Suite 1: DrakesTech)**](https://github.com/SlimefunNewHorizons/Drakes-Suites)  
-> Todo el desarrollo activo, optimizaciones del Ticker Engine, compatibilidad con Paper 1.21.11 y preparación para 26.X se realiza exclusivamente allí.
+<div align="center">
 
-# Infinity Expansion - Slimefun 6
+# ⚡ Infinity Expansion — Drake Edition
 
-> [!NOTE]
-> ### *The Ultimate Endgame for 1.21.1 / Java 21*
-> Este addon ha sido portado y optimizado como parte del ecosistema **Slimefun 6** dentro del **Drake Framework**, diseñado para llevar la experiencia técnica al límite absoluto.
+**Endgame Machinery, Infinite Power Generation, Quarries & Advanced Singularity Technology**
 
----
+<p>
+  <a href="https://github.com/SlimefunNewHorizons/InfinityExpansion-drake"><img src="https://img.shields.io/badge/GitHub-InfinityExpansion-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
+  <img src="https://img.shields.io/badge/Slimefun4-Drake_Edition-22C55E?style=for-the-badge&logo=curseforge&logoColor=white" alt="Slimefun4"/>
+  <img src="https://img.shields.io/badge/Paper-1.21.11-38BDF8?style=for-the-badge&logo=minecraft&logoColor=white" alt="Paper 1.21.11"/>
+  <img src="https://img.shields.io/badge/Java-21-F89820?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21"/>
+</p>
 
-## ⚡ The Experience
-**Infinity Expansion** es el pilar fundamental del endgame en Slimefun. Añade una vasta colección de máquinas de niveles astronómicos, recursos infinitos y sistemas de automatización que transforman el servidor en un laboratorio de tecnología avanzada.
+[🇬🇧 **English**](README.md) · [🇪🇸 **Español**](README_ES.md)
 
-- **Energía Ilimitada**: Reactores y sistemas de generación masiva.
-- **Producción Masiva**: Canteras y extractores de recursos de alta velocidad.
-- **Almacenamiento Cuántico**: Unidades de almacenamiento de gran capacidad.
+</div>
 
----
-
-## 🛠️ Especificaciones Técnicas
-
-| Requisito | Versión |
-|-----------|---------|
-| **Minecraft** | 1.21.1+ (Paper Recommended) |
-| **Java** | 21 |
-| **Slimefun** | 6.0-Drake+ |
-| **Dough-Core** | 1.3.1-DRAKE+ |
+> ### 🏰 Join the Official DrakesCraft Community!
+> 
+> * 🎮 **Server IP**: `mc.drakescraft.cl` *(Java 1.21.11 & Bedrock Port 25565 / 19132)*
+> * 💬 **Official Discord**: [discord.gg/drakescraft](https://discord.gg/rv3vtXZTk7) — *Check out `#general-english`!*
+> * 🌐 **Website & Guides**: [web.drakescraft.cl](https://web.drakescraft.cl) — 🛒 **Store**: [web.drakescraft.cl/store](https://web.drakescraft.cl/store.html)
+> 
+> *Play with this addon alongside 80+ optimized expansions live on our technical survival network!*
 
 ---
 
-## 🚀 Instalación
-Este addon es compatible con el **Reactor Unificado** de SlimefunNewHorizons.
+## 📖 What is InfinityExpansion?
 
-1. Asegúrate de tener instalado el [Slimefun 6 Core](../../slimefun-core/Slimefun4-src) (árbol `sources/slimefun-core` de este monorepo).
-2. Descarga el JAR compilado desde los releases.
-3. Arrastra a tu carpeta `plugins/`.
+Infinity Expansion is the pinnacle of late-game technology for Slimefun4. It introduces astronomical tiers of energy generation, high-speed void quarries, material extractors, and singularity fabrication units designed to transform technical survival into an advanced industrial power.
 
 ---
 
-## 📖 Changelog (Drake Port 1.21.1)
+## ⚙️ Key Features & Systems
 
-### [6.0-Drake]
-- **Port a 1.21.1**: Soporte completo para Paper 1.21.1 y Java 21.
-- **Alineación del Reactor**: Migración exitosa al parent POM raíz.
-- **Fixes de API**: Corrección de constantes de materiales y atributos obsoletos.
-
-> [!TIP]
-> Puedes ver los cambios históricos detallados de versiones anteriores (v141 y menores) en el archivo de historial.
+* ⚡ **Infinite Energy**: Astronomical generation tiers including Solar Panels, Void Energy Harvesters, and Infinity Reactors.
+* ⛏️ **Automated Quarries**: Deep-slate mining quarries and sub-space resource extractors operating at ultra-high throughput.
+* 🌌 **Singularities & Matter Compression**: Molecular compression chambers to forge singularities from hundreds of thousands of raw components.
+* 🛠️ **Infinity Tools & Armor**: God-tier equipment, infinite water/lava buckets, and indestructible endgame utility items.
 
 ---
 
-## 🤝 Créditos y Autoría
-- **Autor Original**: [Mooy1](https://github.com/Mooy1)
-- **Mantenedor**: [Sefiraat](https://github.com/Sefiraat)
-- **Fork Drake / 1.21.1:** [SlimefunNewHorizons](https://github.com/SlimefunNewHorizons)
+## 📋 Technical Compatibility
+
+| Parameter | Requirement |
+|---|---|
+| **Server Software** | Paper / Purpur / Folia **1.21.11** |
+| **Java Runtime** | **Java 21** LTS |
+| **Required Core** | [Slimefun4-Drake](https://github.com/SlimefunNewHorizons/Slimefun4-Drake) |
+| **Architecture** | 100% Server-Side (Vanilla Minecraft clients can join without installing client mods) |
 
 ---
-*Powered by SlimefunNewHorizons - 2026*
 
-<!-- DRAKES-STATUS:BEGIN -->
-> Estado de sincronizacion: **2026-04-24**.
-> Baseline tecnico vigente: **Paper 1.21.1 + Java 21**.
-> CI principal en `main`: **Gates 1-5 en verde**.
-> Nota: el monorepo completo sigue en migracion incremental por lotes.
-<!-- DRAKES-STATUS:END -->
+## 📥 Installation
+
+1. Download the latest release `.jar` from the [Releases](https://github.com/SlimefunNewHorizons/InfinityExpansion-drake/releases) tab or [Modrinth](https://modrinth.com/organization/drakescraft-labs).
+2. Place the `.jar` into your server's `plugins/` directory alongside `Slimefun4-Drake.jar`.
+3. Start or restart your server. Recipes and machines will appear automatically in the Slimefun guide (`/sf guide`).
+
+---
+
+## 🛠️ Building from Source
+
+```bash
+git clone https://github.com/SlimefunNewHorizons/InfinityExpansion-drake.git
+cd InfinityExpansion-drake
+mvn clean package -DskipTests
+```
+
+The compiled artifact will be located under `target/InfinityExpansion-drake.jar`.
+
+---
+
+<div align="center">
+
+**Developed and Maintained by [DrakesCraft Labs](https://github.com/SlimefunNewHorizons)**  
+Licensed under **GPL-3.0-only**.
+
+</div>
 
 ---
 
@@ -74,6 +84,6 @@ Este addon es compatible con el **Reactor Unificado** de SlimefunNewHorizons.
 
 This project is a sovereign fork maintained by [**JackStar6677-1**](https://github.com/JackStar6677-1) under [**DrakesCraft Labs**](https://github.com/SlimefunNewHorizons).
 
-- **Original Project:** Created by the upstream authors and the open-source community.
-- **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21, high concurrency, asynchronous safety, and exploit/duplication prevention.
-- **License:** Distributed under the original **GNU General Public License v3.0 (GPLv3)** (or original upstream license). See the [LICENSE](LICENSE) file for complete terms.
+- **Original Project:** Created by the upstream authors and the open-source community ([Upstream Repository](https://github.com/Slimefun)).
+- **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21 LTS, high concurrency, asynchronous safety, and exploit/duplication prevention.
+- **License:** Distributed under the original **GPL-3.0-only** license terms. See the [LICENSE](LICENSE) file for complete details.
